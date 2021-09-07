@@ -1,0 +1,43 @@
+<link rel="stylesheet" type="text/css" href="/public/css/postimage.css">
+<div class="postimage-box">
+    <h1>Create a Post</h1>
+    <p>Please complete this form in order to create a post.</p>
+    <br><br>
+
+    <form action="/posts/postimage" id="submit-form" method="POST"
+        enctype="multipart/form-data">
+        <div class="user-box">
+            <input type="text" name="title" placeholder="" required>
+            <label for="title">Title of Post</label>
+        </div>
+
+        <div class="text-box">
+            <label for="description" class="text-area">Description:</label><br><br>
+            <textarea rows="5" cols="50" name="description"
+                placeholder="This post is about..." maxlength = "40" required></textarea>
+            <br><br><br>
+        </div>
+
+        <label for="img" class="label-radio">Select Image: &nbsp;&nbsp;</label>
+        <input type="file" id="img" name="uploadImage" accept="image/*" 
+            required>
+        <br><br><br>
+
+        <input type="checkbox" id="image-policy" name="image-policy"
+            required>
+        <label for="image-policy" class="label-radio">I agree to the
+            <a
+                href="https://www.latlmes.com/breaking/your-sensational-news-headline-here-1">
+                Acceptable Use Policy</a> for uploading images.</label>
+        <br><br>
+
+        <button type="submit" class="image-post">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit Image Post
+        </button>
+
+    </form>
+</div>

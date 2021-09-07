@@ -1,0 +1,146 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+}
+
+#main-content {
+    grid-area: content;
+    padding-top: .35em;
+    padding-bottom: .35em;
+    display: grid;
+    gap: .2rem .2rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+}
+
+@media screen and (max-width:950px) {
+    #main-content {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #main-content {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #main-content {
+        grid-template-columns: 1fr;
+        grid-auto-columns: 1fr;
+    }
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 186px 150px;
+    grid-template-columns: auto;
+    border: .0625rem solid rgba(0, 0, 0, .5);
+    border-radius: .25rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .6);
+}
+
+.card-image {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+div[class=card]>img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-title {
+    color: #fff;
+    margin-bottom: .1rem;
+    margin-top: 0;
+    padding-top: .1rem;
+}
+
+.card-body {
+    grid-area: 2 / 1 / 3 / 2;
+    padding: .75rem;
+    background-color: #232f3e;
+    border-radius: 0 0 .2rem .2rem;
+    text-align: center;
+}
+
+div [class=card-body]>a[class=card-button] {
+    text-decoration: none;
+}
+
+.card-text {
+    color: #fff;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.card-body .anchor-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #e9b60e;
+    background-color: transparent;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    justify-self: center;
+}
+
+.card-body .anchor-button:hover {
+    background: #e9b60e;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #e9b60e, 0 0 25px #e9b60e, 0 0 50px #e9b60e, 0 0 100px #e9b60e;
+}
+
+.card-body .anchor-button span {
+    position: absolute;
+    display: block;
+}
+
+.alert-success {
+    color: #155724;
+    font-size: 24px;
+}
+
+.alert-success .alert-link {
+    color: #0b2e13;
+}
+
+.alert-danger {
+    color: #721c24;
+    font-size: 24px;
+}
+
+.alert-danger .alert-link {
+    color: #491217;
+}
+
+#flash-message {
+    position: fixed;
+    left: 50%;
+    top: 16%;
+    transform: translate(-50%, 0);
+    font-size: 24px;
+    color: #36ac51;
+}
+
+#flash-message div {
+    text-align: center;
+}

@@ -1,0 +1,55 @@
+<header>
+    <!-- NavBar Section --> 
+    <nav class ="navbar"> 
+        <div class="navbar__container">
+            <a href="/index" id= "navbar__logo"><i class="fas fa-camera-retro"></i> &nbsp; PHOTO SHACK</i></a> 
+            
+             <!-- search bar top align -->
+            <div class="search">
+                <input type="text"
+                    id="search-text"
+                    placeholder=" Search Gallery"
+                >
+                <button>
+                    <i id="search-button" class="fas fa-search"></i>
+                </button>
+            </div>
+            
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/index" class="navbar__links"> Home </a>
+                </li>
+                
+                {{#if logged}}
+                <li class="navbar__item">
+                    <a id = "logout-button" class="navbar__links"> Log Out </a>
+                </li>                
+                {{else}}
+                <li class="navbar__item">
+                    <a href="/login" id = "login-button" class="navbar__links"> Login </a>
+                </li>        
+                {{/if}}
+
+                <li class="navbar__item">
+                    <a href="/postimage" class="navbar__links"> Post </a>
+                </li>
+                
+                <li class="navbar__item">
+                    <a href="/viewpost" class="navbar__links"> Gallery </a>
+                </li>
+                
+                <li class="navbar__button">
+                    <a href="/registration" class="button"> Registration </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

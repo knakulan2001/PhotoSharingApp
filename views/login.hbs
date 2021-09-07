@@ -1,0 +1,33 @@
+<link rel="stylesheet" type="text/css" href="/public/css/login.css">
+<div class="login-box">
+    <h1>Login</h1>
+    <form action="/users/login" method="POST" id="submit-form">
+        <div class="user-box">
+            <input type="text" name="username" required="">
+            <label>Username</label>
+        </div>
+        <div class="user-box">
+            <input type="password" name="password" required="">
+            <label>Password</label>
+        </div>
+        <button id="login" type="submit">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Login
+        </button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="cancel" type="reset">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Cancel
+        </button>
+        <br><br><br>
+        <div class="text-container"> <!-- Block parent element -->
+            <p>Do Not Have An Acount?<a href="/registration"> Register Here!</a></p>
+        </div>
+    </form>
+</div>
