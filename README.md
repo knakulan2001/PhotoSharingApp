@@ -1,4 +1,4 @@
-# CSC 317 Term Project : Basic 
+# CSC 317 Term Project : Photo Sharing Website 
 
 This is a repository containing the relevant files to locally build and deploy a communal photo sharing website (similar to Facebook and Instagram). This website is complete with registration/login functionality, uploading images/posts, commenting on relevant posts, and more. Follow the build/run instruction below after cloning the repository locally to view the website!
 
