@@ -11,7 +11,7 @@ This is a repository containing the relevant files to locally build and deploy a
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)&nbsp;
 
 # Build Instructions
-1. cd csc317-termproject-knakulan2001/application
+1. cd PhotoSharingApp-knakulan2001/application
 2. npm install
 
 # Run Instructions
